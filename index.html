@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="gradient"></div>
+        <div class="bg-image"></div>
+        <div id="tittle-case">
+
+            <h1 id="title">Why do you migrate? </h1>
+        </div>
+
+    </header>
+    <main>
+        <!-- dscription-->
+        <div id="survey">
+            <p id="description"> This is a survey created the idea of gathering information about motivation and
+                reasons for migrants to abandon
+                their home countries and move to new ones. This survey was independently developed, your identity will
+                be kept private.</p>
+
+
+
+            <form action="nnn" id="survey-form">
+                <!--PERSONAL DATA-->
+                <div id="Personal-Data">
+                    <div class="personal-wrapper">
+                        <label id="name-label" for="name" class="label-personal-data">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required
+                            class="personal-data-input">
+                        <br>
+                        <label id="email-label" for="email" class="label-personal-data">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter an email" required
+                            class="personal-data-input">
+                        <br>
+                        <label id="number-label" for="number" class="label-personal-data">Age </label>
+                        <input type="number" id="number" name="number" placeholder="Enter your age (18 to 99)" min="18"
+                            max="100" required class="personal-data-input">
+                        <br>
+                        <label id="cuntry-label" for="country" class="label-personal-data"> country</label>
+                        <input type="text" id="country" name="country" placeholder="your country" required
+                            class="personal-data-input">
+
+
+                        <!--SELECT-JOB-->
+
+                        <div id="select-job">
+                            <br>
+                            <label for="dropdown" id="select-job-labe" class="label-personal-data">Job situation</label>
+
+                            <select name="select" id="dropdown">
+
+                                <option value="Full time Job">Full time Job</option>
+                                <option value="Part Time Job ">Part Time Job</option>
+                                <option value="Full Time Student">Full Time Student</option>
+                                <option value="Unemployed">Unemployed</option>
+                                <option value="Freelancer">Freelancer</option>
+                                <option value="Other">Other</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                            </select>
+
+                        </div>
+                        <br>
+                        <!---ACADEMICLEVEL-->
+                        <div id="academic-level">
+                            <label for="dropdown" id="select" class="label-personal-data"> Your highest academic level
+                            </label>
+
+                            <select name="select" id="dropdown">
+                                <option value="Elementary/Primary School">Elementary/Primary School</option>
+                                <option value="Secondary/High School ">Secondary/High School </option>
+                                <option value="University/College (BA)">University/College (BA)</option>
+                                <option value="Profesional ">Profesional</option>
+                                <option value="Masters ">Masters</option>
+                                <option value="Doctorate " Doctorate></option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--begining questions-->
+
+                <!-- POLITICALSITUTION-->
+                <div id="political-sitution" class="sections">
+                    <br>
+                    <label for="radio" class="tittle">How do you feel about the political situation in your
+                        country?</label>
+                    <br>
+                    <label for="radio-1">I’m happy with it</label>
+                    <input id="radio-1" type="radio" name="political-sitution" value="happy ">
+                    <br>
+                    <label for="radio-2">I’m not ok with most of it</label>
+                    <input id="radio-2" type="radio" name="political-sitution" value=" ok with most of it">
+                    <br>
+                    <label for="radio-3">I’m unhappy with it</label>
+                    <input id="radio-3" type="radio" name="political-sitution" value=" unhappy t">
+                    <br>
+                    <label for="radio-3">I fear for my family’s or my safety</label>
+                    <input id="radio-3" type="radio" name="political-sitution"
+                        value="fear for my family’s or my safety ">
+                    <br>
+                    <label for="radio-4">I don’t care/ I’m not informed about politics</label>
+                    <input id="radio-4" type="radio" name="political-sitution" value="I don’t care/not informed">
+                    <br>
+                </div>
+                <!--ECONOMICSITUATION-->
+                <div id="economic-sitution" class="sections">
+                    <br>
+                    <label for="radio" class="tittle">How do you feel about the economic situation in your
+                        country?</label>
+                    <br>
+                    <label for="radio-A">I’m happy with it</label>
+                    <input id="radio-A" type="radio" name="economic-sitution" value="happy ">
+                    <br>
+                    <label for="radio-B">I’m ok with most of it</label>
+                    <input id="radio-B" type="radio" name="economic-sitution" value="ok with most of it">
+                    <br>
+                    <label for="radio-C">I’m not ok with most of it</label>
+                    <input id="radio-C" type="radio" name="economic-sitution" value="not ok with most of it ">
+                    <br>
+                    <label for="radio-C">I’m unhappy with it</label>
+                    <input id="radio-C" type="radio" name="economic-sitution" value="unhappy">
+                    <br>
+                    <label for="radio-C">I fear for my family’s or my future</label>
+                    <input id="radio-C" type="radio" name="economic-sitution" value="fear family’s or my future">
+                    <br>
+                    <label for="radio-C">I don’t care/ I’m not informed about economics</label>
+                    <input id="radio-C" type="radio" name="economic-sitution" value="care/not informed">
+                    <br>
+                </div>
+
+                <!--SAFETY-->
+                <div id="safety" class="sections">
+                    <br>
+                    <label for="radio" class="tittle">Do you consider your country to be safe to live?<em> (crime rate,
+                            all around safety to transit and live freely, going
+                            outside, etc)</em></label>
+                    <br>
+                    <label for="radio-A">Yes, I feel very safe</label>
+                    <input id="radio-A" type="radio" name="safety" value="feel very safe">
+                    <br>
+                    <label for="radio-A">Yes, I feel mostly safe though there is a growing crime rate</label>
+                    <input id="radio-A" type="radio" name="safety" value="mostly safe">
+                    <br>
+                    <label for="radio-A">No, I’m starting to feel unsafe with the crime rate</label>
+                    <input id="radio-A" type="radio" name="safety" value="No,starting to feel unsafe">
+                    <br>
+                    <label for="radio-A">No, I don’t feel safe at all</label>
+                    <input id="radio-A" type="radio" name="safety" value="don’t feel safe at all">
+                    <br>
+                    <label for="radio-A">I’m not sure</label>
+                    <input id="radio-A" type="radio" name="safety" value="not sure">
+                </div>
+                <!--COUNTRY AT WAR-->
+
+                <div id="at-war" class="sections">
+                    <br>
+                    <label for="radio" class="tittle">Is your country at war or at risk to enter an armed
+                        conflict?</label>
+                    <br>
+                    <label for="yes">Yes</label>
+                    <input id="yes" type="radio" name="at-war" value="yes">
+                    <br>
+                    <label for="no">no</label>
+                    <input id="no" type="radio" name="at-war" value="no">
+                    <br>
+                    <label for="maybe">maybe</label>
+                    <input id="maybe" type="radio" name="at-war" value="maybee">
+
+                </div>
+                <!--EXPRESSION-->
+                <br>
+                <div id="expression-beliefs" class="sections">
+
+                    <label for="checkbox" class="tittle">Do you consider that your country is a safe place to express
+                        your
+                        beliefs? <em>(You can choose more than one option)</em> </label>
+                    <label for="beliefs-yes">Yes, I can express myself fully and freely</label>
+                    <input id="beliefs-yes" type="checkbox" name="expression-beliefs" value="yes">
+                    <br>
+                    <label for="no-political">No, I feel that my political ideas put me at risk</label>
+                    <input id="no-political" type="checkbox" name="expression-beliefs"
+                        value="No,political ideas put me at risk">
+                    <br>
+                    <label for="no-religous">No, I feel that my religious beliefs put me at risk</label>
+                    <input id="no-religous" type="checkbox" name="expression-beliefs"
+                        value="no,religous ideas put me at risk">
+                    <br>
+                    <label for="no-race-etnicity">No, I feel that my race or ethnicity puts me at risk</label>
+                    <input id="no-race-etnicity" type="checkbox" value="No,race or ethnicity puts me at risk"
+                        name="expression-beliefs">
+                    <br>
+                    <label for="no-sexuality">No, I feel that my sexuality or identity puts me at risk</label>
+                    <input type="checkbox" id="no-sexuality" name="expression-beliefs"
+                        value="No,sexuality or identity puts me at risk">
+                    <br>
+                    <label for="no-freedom">No, there’s no freedom of speech in my country</label>
+                    <input type="checkbox" id="no-freedom" name="expression-beliefs"
+                        value="No,there’s no freedom of speech">
+                    <br>
+                    <label for="not-sure">I’m not sure</label>
+                    <input type="checkbox" id="not-sure" name="expression-beliefs" value="not sure">
+                </div>
+
+                <!--FREEDOM-OF-PRESS-->
+                <br>
+                <div id="fredom-press" class="sections">
+                    <label for="radio" class="tittle">Does your country have freedom of press?</label>
+                    <br>
+                    <label for="freedom-press-yes">Yes, you can publish articles opposite to the government without
+                        fear</label>
+                    <input id="freedom-press-yes" type="radio" name="freedom-press" value="yes">
+                    <br>
+                    <label for="freedom-press-no">No, you can’t publish articles opposite to the government without
+                        fear</label>
+                    <input id="freedom-press-no" type="radio" name="freedom-press" value="No">
+                    <br>
+                    <label for="not-sure-press">I’m not sure</label>
+                    <input id="not-sure-press" type="radio" name="freedom-press" value="not sure">
+
+                </div>
+
+                <!--SERVICES-->
+                <br>
+                <div id="services" class="sections">
+                    <label for="checkboxes" class="tittle">Does your country offer any of the following services paid by
+                        taxes ? <em>(You can choose more than one option)</em></label>
+                    <br>
+                    <label for="health">Free health care</label>
+                    <input id="health" type="checkbox" name="services" value="health care">
+                    <br>
+                    <label for="elemental-education">Free elemental education</label>
+                    <input id="elementa-education" type="checkbox" name="services" value="elemental education">
+                    <br>
+                    <label for="higher-education">Free higher education (college, university)</label>
+                    <input id="higher-education" type="checkbox" name="services" value="(college, university)">
+                    <br>
+                    <label for="welfare">Social welfare for people in needx</label>
+                    <input id="welfare" type="checkbox" name="services" value="welfare">
+                    <br>
+                    <label for="Housing">Housing welfare for people in need</label>
+                    <input id="Housing" type="checkbox" name="services" value="Housing">
+                    <br>
+                </div>
+                <!--LEAVING-->
+                <br>
+                <div id="considered-leaving" class="sections">
+                    <label for="radio" class="tittle">Have you considered leaving your country?</label>
+                    <br>
+                    <label for="leaving-yes">yes</label>
+                    <input id="leaving-yes" type="radio" name="considered-leaving" value="yes">
+                    <br>
+                    <label for="leaving-no">No</label>
+                    <input id="leaving-no" type="radio" name="considered-leaving" value="No">
+                    <br>
+                    <label for="not-sure-leaving">I’m not sure</label>
+                    <input id="not-sure-leaving" type="radio" name="considered-leaving" value="not sure">
+                    <br>
+                </div>
+                <!--if you considered leaving, why?-->
+                <br>
+                <div id="if-considered-leaving" class="sections">
+                    <label for="checkbox" class="tittle">If you answered ‘Yes’, why is that so? <em>(You can choose more
+                            than one option)</em></label>
+                    <br>
+                    <label for="discontent-political">I’m discontent with the political climate</label>
+                    <input id="discontent-political" type="checkbox" name="if-considered-leaving"
+                        value="discontent political">
+                    <br>
+                    <label for="discontent-economical">I’m discontent with economical climate</label>
+                    <input id="discontent-economical" type="checkbox" name="if-considered-leaving"
+                        value="discontent with economical climate">
+                    <br>
+                    <label for="discontent-safety">I’m discontent the crime rate and all around safety of the
+                        country</label>
+                    <input id="discontent-safety" type="checkbox" name="if-considered-leaving"
+                        value="discontent the crime rate,safety of the country">
+                    <br>
+                    <label for="scared">I’m scared of armed conflicts are happening or may happen</label>
+                    <input id="scared" type="checkbox" name="if-considered-leaving" value="scared of armed conflicts">
+                    <br>
+                    <label for="discontent-social">I’m discontent with the social and social situation</label>
+                    <input id="discontent-social" type="checkbox" name="if-considered-leaving"
+                        value="discontent with the social and social situation. ">
+                    <br>
+                    <label for="no-freedomm.expressiom">I feel I have no freedom of expression</label>
+                    <input id="no-freedomm.expressiom" type="checkbox" name="if-considered-leaving"
+                        value="I feel I have no freedom of expression ">
+                    <br>
+                    <label for="Personal">Personal reasons (I want to travel, I want to know other places, etc)</label>
+                    <input id="Personal" type="checkbox" name="if-considered-leaving" value="Personal reasons">
+                    <br>
+                    <!--ECONOMICAL SITUATION ENABLES YOU?-->
+                </div>
+                <br>
+                <div id="economical-enable" class="sections">
+                    <label for="radio" class="tittle">Your economical situation enables you to leave your
+                        country?</label>
+                    <br>
+                    <label for="economical-enable-yes">yes</label>
+                    <input id="economical-enable-yes" type="radio" name="economical-enable" value="yes">
+                    <br>
+                    <label for="economical-enable-no">no</label>
+                    <input id="economical-enable-no" type="radio" name="economical-enable" value="no">
+                    <br>
+                    <label for="economical-enable-not-sure">not sure</label>
+                    <input id="economical-enable-not-sure" type="radio" name="economical-enable" value="not sure">
+                </div>
+                <!--LEAVING YOUR COUNTRY-->
+                <div id="leaving-your-country" class="sections">
+                    <label for="radio" class="tittle">Leaving your country is</label>
+                    <br>
+                    <label for="not-willing">Something I’m not thinking or willing to do</label>
+                    <input id="not-willing" type="radio" name="leaving-your-country" value="not willing">
+                    <br>
+                    <label for="looking-forward-to">Something I’m looking forward to</label>
+                    <input id="looking-forward-to" type="radio" name="leaving-your-country" value="looking forward to ">
+                    <br>
+                    <label for="must">A must for me</label>
+                    <input id="must" type="radio" name="leaving-your-country" value="A must for me">
+                    <br>
+                    <label for="thinking">Something I’m thinking about</label>
+                    <input id="thinking" type="radio" name="leaving-your-country" value="Something I’m thinking about">
+                </div>
+                <!--DESTINATIONS-->
+                <br>
+                <div id="destinations" class="sections">
+                    <label for="radio" class="tittle">If I leave my country I would be leaving it for</label>
+                    <br>
+                    <label for="europe">A country in Europe</label>
+                    <input id="europe" type="radio" name="destination" value="Europe">
+                    <br>
+                    <label for="latam">A country in Latin America</label>
+                    <input id="latam" type="radio" name="destination" value="LATAM">
+                    <br>
+                    <label for="africa">A country in Africa</label>
+                    <input id="africa" type="radio" name="destination" value="Africa">
+                    <br>
+                    <label for="asia">A country in Asia</label>
+                    <input id="asia" type="radio" name="destination" value="Asia">
+                    <br>
+                    <label for="middle-east">A country in the Middle East</label>
+                    <input id="middle-east" type="radio" name="destination" value="Middle East">
+                    <br>
+                    <label for="south-asia">A country in South Asia</label>
+                    <input id="south-asia" type="radio" name="destination" value="South Asia">
+                    <br>
+                    <label for="usa">USA</label>
+                    <input id="usa" type="radio" name="destination" value="USA">
+                    <br>
+                    <label for="uk">UK</label>
+                    <input id="uk" type="radio" name="destination" value="UK">
+                    <br>
+                    <label for="australia-newzeland">Australia or New Zeland</label>
+                    <input id="australia-newzeland" type="radio" name="destination" value="Australia/New Zeland">
+                    <br>
+                    <label for="canada">Canada</label>
+                    <input id="canada" type="radio" name="destination" value="Canada">
+                    <br>
+                </div>
+                <!--coments ant submit button-->
+                <div class="sections" id="button">
+                    <!--TEXTAREA-->
+                    <br>
+                    <h6>wether or not you decide to migrate, we would like to know your stance on migration and
+                        migrants.feel free to write you
+                        opinio in ths comment box</h6>
+                    <textarea id="textarea" name="comments"></textarea>
+                    <!--BUTTON SUBMMIT-->
+                    <br>
+                    <button type="submit" id="submit" class="tittle">submit</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
